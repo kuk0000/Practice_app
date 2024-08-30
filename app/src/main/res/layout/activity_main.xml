@@ -13,11 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="40dp">
         <ImageView
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:src="@drawable/add"
+            android:src="@drawable/add1"
             app:tint="#00FF00"/>
         <TextView
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="02-120"
+        android:text="@string/_02_120"
         android:textSize="40dp"/>
     <GridLayout
         android:layout_width="wrap_content"
@@ -146,17 +146,22 @@
             android:id="@+id/icon_video"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="30dp"
-            android:src="@drawable/video"/>
+            android:layout_marginRight="30dp"
+            android:src="@drawable/video1"/>
         <ImageView
-            android:i="@+id/icon_call"
+            android:id="@+id/icon_call"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_toEndOf="@id/icon_video"
-            android:src="@drawable/call"/>
-        <ImageView
-            android:src="@drawable/video"/>
+            android:layout_toRightOf="@id/icon_video"
+            android:src="@drawable/call1"/>
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/icon_call"
+            android:src="@drawable/back1"/>
+    </RelativeLayout>
 
 
 </LinearLayout>
